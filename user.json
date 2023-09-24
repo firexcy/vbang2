@@ -1,0 +1,10 @@
+[
+    {
+      "t": "ssp",
+      "u": "https://sspai.com/search/post/{{{s}}}"
+    },
+    {
+      "t": "alt",
+      "u": "https://farside.link/{{{s}}}"
+    }
+]
