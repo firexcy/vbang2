@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
       res.redirect(`https://duckduckgo.com/?q=${query}`);
     }
   } else {
-    res.redirect(`https://duckduckgo.com/?q=!sp%20${query}`);
+    res.redirect(`https://duckduckgo.com/?q=!g%20${query}`);
   }
 });
 
