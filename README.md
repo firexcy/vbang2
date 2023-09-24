@@ -30,6 +30,8 @@ You can run the script locally with
 node index.js
 ```
 
-…or deploy it to Vercel by clicking the button below.
+…or deploy it to Vercel for free by clicking the button below.
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffirexcy%2Fbang2"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
+
+A preview deployment is available at <https://bang2.vercel.app/>. It is recommended to deploy your own instance.
