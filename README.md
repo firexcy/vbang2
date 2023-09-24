@@ -14,7 +14,7 @@ The script —
 
 You can define your bang strings in `user.json` following the template below:
 
-```json
+```jsonc
 [
     {
       "t": "exampleBangString",
