@@ -21,10 +21,10 @@ app.get('/', (req, res) => {
       const redirectUrl = bangEntry.u.replace('{{{s}}}', mainQuery);
       res.redirect(redirectUrl);
     } else {
-      res.redirect(`https://duckduckgo.com/?q=${query}`);
+      res.redirect(`https://duckduckgo.com/?q=${encodeURIComponent(query)}`);
     }
   } else {
-    res.redirect(`https://duckduckgo.com/?q=!g%20${query}`);
+    res.redirect(`https://duckduckgo.com/?q=!g%20${encodeURIComponent(query)}`);
   }
 });
 
