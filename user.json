@@ -1,9 +1,5 @@
 [
     {
-      "t": "iac",
-      "u": "http://wayback-classic.net/cgi-bin/history.cgi?q={{{s}}}"
-    },
-    {
       "t": "ais",
       "u": "http://archive.is/newest/{{{s}}}"
     },
