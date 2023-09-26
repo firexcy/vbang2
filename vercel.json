@@ -1,9 +1,9 @@
 {
     "version": 2,
-    "redirects": [
+    "routes": [
         {
-            "source": "/",
-            "destination": "/index.html"
+            "src": "/",
+            "dest": "/index.html"
         }
     ],
     "builds": [
