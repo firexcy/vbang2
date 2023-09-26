@@ -4,13 +4,15 @@ html {
 
 body {
     height: 100%;
-    background-color: #eeeeee;
+    background-color: #ECEFF4;
+    color: #2E3440;
 }
 
 .header {
     font-size: 32px;
     margin: 16px;
     font-weight: bold;
+    color: #5E81AC;
 }
 
 .subs {
@@ -21,7 +23,7 @@ body {
 .notes {
     font-size: 16px;
     margin: 8px;
-    color: rgba(0,0,0,75%);
+    color: #4C566A;
 }
 
 #wrapper {
@@ -46,20 +48,10 @@ body {
     font-size: 20px;
 }
 
-@media only screen and (max-device-width: 700px) {
-    body {
-        width: 100%;
-        margin-left: 2px;
-        padding: 0;
-    }
-
-    .query {
-        width: 200px;
-    }
-}
-
-@media only screen and (max-device-width: 701px) and (orientation: landscape) {
-    .query {
-        width: 250px;
-    }
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
 }
