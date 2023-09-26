@@ -17,13 +17,12 @@
             <input class="submit" type="submit" value="question">
         </form>
         <div class="quick">
-            <span class="inlineh">goto </span>
-            <a onclick="prefoxAndSubmit(r)">r</a>
-            <a onclick="prefoxAndSubmit(hn)">hn</a>
-            <a onclick="prefoxAndSubmit(w)">w</a>
-            <a onclick="prefoxAndSubmit(gh)">gh</a>
-            <a onclick="prefoxAndSubmit(bd)">bd</a>
-            <a onclick="prefoxAndSubmit(taobao)">tb</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(r)">r</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(hn)">hn</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(w)">w</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(gh)">gh</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(bd)">bd</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit(taobao)">tb</a>
         </div>
         <p class="notes"><span class="inlineh">syntax </span>“v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt;
             v&lt;bang&gt;”.</p>
@@ -36,7 +35,7 @@
             own risk.</p>
     </div>
     <script>
-        function prefoxAndSubmit(bang) {
+        function prefixAndSubmit(bang) {
             var textBox = document.getElementById("query");
             textBox.value = "v" + bang + textBox.value;
             document.getElementById("search").submit();
