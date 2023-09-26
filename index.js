@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 const userBangs = require('./user.json');
 
-app.get('/', (req, res) => {
+app.get('/search', (req, res) => {
   const query = req.query.q;
   const bangMatch = query.match(/\b(v[0-9A-z]{1,4})\b/g);
   let bang, mainQuery;
