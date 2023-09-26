@@ -3,21 +3,26 @@ html {
 }
 
 body {
-    height: 100%
+    height: 100%;
+    background-color: #eeeeee;
 }
 
 .header {
     font-size: 32px;
+    margin: 16px;
     font-weight: bold;
 }
 
 .subhead {
-    font-size: 12px;
+    font-size: 16px;
+    margin: 8px;
 }
 
 #wrapper {
     position: relative;
-    top: 25%
+    top: 25%;
+    text-align: center;
+    display: block;
 }
 
 .query {
