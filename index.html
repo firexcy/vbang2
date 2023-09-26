@@ -11,17 +11,37 @@
     <div id="wrapper">
         <h1 class="header">vbang2</h1>
         <p class="subs">bangs like ddg, but led by v</p>
-        <form action="/search.js" method="get">
-            <input autofocus class="query" type="text" size="40" autocomplete="off" name="q"
+        <form id="search" action="/search.js" method="get">
+            <input autofocus class="query" id="query" type="text" size="40" autocomplete="off" name="q"
                 placeholder="to bang or not to bang…">
             <input class="submit" type="submit" value="question">
         </form>
-        <p class="notes"><strong>syntax </strong>“v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt; v&lt;bang&gt;”.</p>
-        <p class="notes"><strong>e.g. </strong>“v<u>g</u> &lt;keyword&gt;” to google, “&lt;keyword&gt; v<u>w</u>” for wiki, etc.</p>
-        <p class="notes"><strong>api </strong>available at <u>/search?q=%s</u> for programmable calls.</p>
-        <p class="notes"><strong>see </strong><a href="https://duckduckgo.com/bang_lite.html">ddg’s catalog</a> for more bangs (alphanums only).</p>
-        <p class="notes">tossed up by chenyang “platy” hsu. <a href="https://github.com/firexcy/vbang2">fork</a> at your own risk.</p>
+        <div class="quick">
+            <span class="inlineh">goto </span>
+            <a onclick="prefoxAndSubmit(r)">r</a>
+            <a onclick="prefoxAndSubmit(hn)">hn</a>
+            <a onclick="prefoxAndSubmit(w)">w</a>
+            <a onclick="prefoxAndSubmit(gh)">gh</a>
+            <a onclick="prefoxAndSubmit(bd)">bd</a>
+            <a onclick="prefoxAndSubmit(taobao)">tb</a>
+        </div>
+        <p class="notes"><span class="inlineh">syntax </span>“v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt;
+            v&lt;bang&gt;”.</p>
+        <p class="notes"><span class="inlineh">e.g. </span>“v<u>g</u> &lt;keyword&gt;” to google, “&lt;keyword&gt;
+            v<u>w</u>” for wiki, etc.</p>
+        <p class="notes"><span class="inlineh">api </span>available at <u>/search?q=%s</u> for programmable calls.</p>
+        <p class="notes"><span class="inlineh">see </span><a href="https://duckduckgo.com/bang_lite.html">ddg’s
+                catalog</a> for more bangs (alphanums only).</p>
+        <p class="notes">tossed up by chenyang “platy” hsu. <a href="https://github.com/firexcy/vbang2">fork</a> at your
+            own risk.</p>
     </div>
+    <script>
+        function prefoxAndSubmit(bang) {
+            var textBox = document.getElementById("query");
+            textBox.value = "v" + bang + textBox.value;
+            document.getElementById("search").submit();
+        }
+    </script>
 </body>
 
 </html>
