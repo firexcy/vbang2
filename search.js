@@ -17,7 +17,7 @@ export default (req, res) => {
     if (bang) {
       const bangMatch = userBangs.find(entry => entry.t === bang);
       if (bangMatch) {
-        const redirectUrl = bangMatch.u.replace('{{{s}}}', mainQuery);
+        const redirectUrl = bangMatch.u.replace('{{{s}}}', encodeURIComponent(mainQuery));
         res.redirect(redirectUrl);
       } else {
         res.redirect(`https://duckduckgo.com/?q=!${bang}%20${encodeURIComponent(mainQuery)}`);

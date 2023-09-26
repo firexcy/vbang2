@@ -1,62 +1,79 @@
 html {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-body {
+    font-family: ui-monospace, "SF Mono", Consolas, "Roboto Mono", "Noto Mono",
+      "Microsoft Yahei", monospace, ui-sans-serif, sans-serif;
+  }
+  
+  body {
     height: 100%;
-    background-color: #ECEFF4;
-    color: #2E3440;
-}
-
-.header {
+    background-color: #eceff4;
+    color: #2e3440;
+  }
+  
+  a,
+  a:visited {
+    color: #5e81ac;
+    text-decoration: none;
+  }
+  
+  a::after {
+    content: "°";
+  }
+  
+  .header {
     font-size: 32px;
     margin: 16px;
     font-weight: bold;
-    color: #5E81AC;
-}
-
-.subs, .quick {
+    color: #5e81ac;
+  }
+  
+  .subs,
+  .quick {
     font-size: 20px;
     margin: 16px;
-}
-
-.inlineh {
+  }
+  
+  .inlineh {
     font-weight: bold;
-    color:#5E81AC;
-}
-
-.notes {
+    color: #5e81ac;
+  }
+  
+  .notes {
     font-size: 16px;
     margin: 8px;
-    color: #4C566A;
-}
-
-#wrapper {
+    color: #4c566a;
+  }
+  
+  #wrapper {
     position: relative;
     top: 25%;
     text-align: center;
     display: block;
-}
-
-.query {
-    border: 1px solid;
+  }
+  
+  .query {
+    border: 1px solid #5e81ac;
     font-size: 20px;
     padding: 5px 6px;
     text-align: left;
     width: 60%;
     max-width: 600px;
     height: 28px;
-}
-
-.submit {
+    background: #eceff4;
+  }
+  
+  .submit {
     height: 40px;
+    border: 1px solid #5e81ac;
     font-size: 20px;
-}
-
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-}
+    background: #5e81ac;
+    color: #eceff4;
+  }
+  
+  button,
+  input,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: 100%;
+  }
+  
