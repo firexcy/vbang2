@@ -10,5 +10,11 @@
             "src": "search.js",
             "use": "@vercel/node"
         }
+    ],
+    "routes": [
+        {
+            "src": "/search",
+            "dest": "/search.js"
+        }
     ]
 }

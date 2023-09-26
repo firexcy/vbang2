@@ -4,7 +4,7 @@ A simple Node script that emulates DuckDuckGo-style Bangs (search engine shortcu
 
 The script —
 
-1. exposes an API endpoint `/` at port `3000` that accepts a single parameter `q` from HTTP GET calls; and
+1. exposes an API endpoint `/search` that accepts a single parameter `q` from HTTP GET calls; and
 2. parses `q` to determine whether there is a prefixing or affixing “bang” string (defined as a space-delimited string comprising of a leading letter `v` followed by a sequence of alphanumerics) and —
     1. if there is exactly one bang string as defined, looks up it with the leading `v` truncated, against the `user.js` file, which is an array of pairing `t` and `u` keys —
         1. if there is a matching `t` key, navigates the browser to the URL in the pairing `u` key, with its substring `{{{s}}}` substituted with `q`, truncated of the bang string; otherwise
