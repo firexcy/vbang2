@@ -17,12 +17,12 @@
             <input class="submit" type="submit" value="question">
         </form>
         <div class="quick">
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(r)">r</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(hn)">hn</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(w)">w</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(gh)">gh</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(bd)">bd</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit(taobao)">tb</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('r')">r</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('hn')">hn</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('w')">w</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('gh')">gh</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('bd')">bd</a>
+            <a href="javascript:void(0);" onclick="prefixAndSubmit('taobao')">tb</a>
         </div>
         <p class="notes"><span class="inlineh">syntax </span>“v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt;
             v&lt;bang&gt;”.</p>
@@ -37,7 +37,7 @@
     <script>
         function prefixAndSubmit(bang) {
             var textBox = document.getElementById("query");
-            textBox.value = "v" + bang + textBox.value;
+            textBox.value = "v" + bang + ' ' + textBox.value;
             document.getElementById("search").submit();
         }
     </script>
