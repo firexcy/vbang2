@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "cleanUrls": true,
     "builds": [
         {
             "src": "index.html",
@@ -13,8 +12,8 @@
     ],
     "routes": [
         {
-            "src": "/search(?<query>.+)",
-            "dest": "/search.js?q=$query"
+            "src": "/search",
+            "dest": "/search.js"
         }
     ]
 }
