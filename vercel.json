@@ -1,12 +1,13 @@
 {
     "version": 2,
+    "cleanUrls": true,
     "builds": [
         {
             "src": "index.html",
             "use": "@vercel/static"
         },
         {
-            "src": "api/*.js",
+            "src": "search.js",
             "use": "@vercel/node"
         }
     ]
