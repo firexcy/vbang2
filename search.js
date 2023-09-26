@@ -3,7 +3,7 @@ const userBangs = require('./user.json');
 export default (req, res) => {
   if (req.method === 'GET') {
     const query = req.query.q;
-    const bangMatch = query.match(/\b(v[0-9A-z]{1,4})\b/g);
+    const bangMatch = query.match(/\b([Vv][0-9A-z]{1,4})\b/g);
     let bang, mainQuery;
 
     if (bangMatch && bangMatch.length >= 1) {
