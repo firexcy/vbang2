@@ -1,56 +1,56 @@
 html {
     font-family: ui-monospace, "SF Mono", Consolas, "Roboto Mono", "Noto Mono",
-      "Microsoft Yahei", monospace, ui-sans-serif, sans-serif;
-  }
-  
-  body {
+        "Microsoft Yahei", monospace, ui-sans-serif, sans-serif;
+}
+
+body {
     height: 100%;
     background-color: #eceff4;
     color: #2e3440;
-  }
-  
-  a,
-  a:visited {
+}
+
+a,
+a:visited {
     color: #5e81ac;
     text-decoration: none;
-  }
-  
-  a::after {
+}
+
+a::after {
     content: "°";
-  }
-  
-  .header {
+}
+
+.header {
     font-size: 32px;
     margin: 16px;
     font-weight: bold;
     color: #5e81ac;
-  }
-  
-  .subs,
-  .quick {
+}
+
+.subs,
+.quick {
     font-size: 20px;
     margin: 16px;
-  }
-  
-  .inlineh {
+}
+
+.inlineh {
     font-weight: bold;
     color: #5e81ac;
-  }
-  
-  .notes {
+}
+
+.notes {
     font-size: 16px;
     margin: 8px;
     color: #4c566a;
-  }
-  
-  #wrapper {
+}
+
+#wrapper {
     position: relative;
     top: 25%;
     text-align: center;
     display: block;
-  }
-  
-  .query {
+}
+
+.query {
     border: 1px solid #5e81ac;
     font-size: 20px;
     padding: 5px 6px;
@@ -59,21 +59,20 @@ html {
     max-width: 600px;
     height: 28px;
     background: #eceff4;
-  }
-  
-  .submit {
+}
+
+.submit {
     height: 40px;
     border: 1px solid #5e81ac;
     font-size: 20px;
     background: #5e81ac;
     color: #eceff4;
-  }
-  
-  button,
-  input,
-  select,
-  textarea {
+}
+
+button,
+input,
+select,
+textarea {
     font-family: inherit;
     font-size: 100%;
-  }
-  
+}
