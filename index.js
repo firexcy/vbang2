@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
       res.redirect(`https://duckduckgo.com/?q=!${bang}%20${encodeURIComponent(mainQuery)}`);
     }
   } else {
-    res.redirect(`https://kagi.com/search?q=${encodeURIComponent(mainQuery)}`);
+    res.redirect(`https://duckduckgo.com/?q=!g%20${encodeURIComponent(mainQuery)}`);
   }
 });
 

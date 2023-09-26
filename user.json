@@ -1,14 +1,54 @@
 [
     {
-      "t": "ais",
-      "u": "http://archive.is/newest/{{{s}}}"
+      "t": "g",
+      "u": "https://www.google.com/search?q={{{s}}}"
     },
     {
-      "t": "ssp",
-      "u": "https://sspai.com/search/post/{{{s}}}"
+      "t": "yt",
+      "u": "https://www.youtube.com/results?search_query={{{s}}}"
     },
     {
-      "t": "alt",
-      "u": "https://farside.link/{{{s}}}"
+      "t": "w",
+      "u": "https://en.wikipedia.org/wiki/Special:Search?search={{{s}}}"
+    },
+    {
+      "t": "wzh",
+      "u": "https://zh.wikipedia.org/w/wiki.phtml?search={{{s}}}&go=Go"
+    },
+    {
+      "t": "gh",
+      "u": "https://github.com/search?utf8=%E2%9C%93&q={{{s}}}"
+    },
+    {
+      "t": "t",
+      "u": "https://twitter.com/search?q={{{s}}}"
+    },
+    {
+      "t": "wa",
+      "u": "https://www.wolframalpha.com/input/?i={{{s}}}"
+    },
+    {
+      "t": "mdn",
+      "u": "https://developer.mozilla.org/search?q={{{s}}}"
+    },
+    {
+      "t": "hn",
+      "u": "https://hn.algolia.com/?q={{{s}}}"
+    },
+    {
+      "t": "bd",
+      "u": "http://www.baidu.com/s?wd={{{s}}}"
+    },
+    {
+      "t": "gi",
+      "u": "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1"
+    },
+    {
+      "t": "tb",
+      "u": "https://s.taobao.com/search?q={{{s}}}"
+    },
+    {
+      "t": "jd",
+      "u": "http://search.jd.com/Search?keyword={{{s}}}&enc=utf-8"
     }
 ]
