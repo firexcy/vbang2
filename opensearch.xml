@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+<ShortName>vbang2</ShortName>
+
+<InputEncoding>UTF-8</InputEncoding>
+<Image height="16" width="16">data:image/svg+xml;base64,PCEtLSBUaGlzIFNvdXJjZSBDb2RlIEZvcm0gaXMgc3ViamVjdCB0byB0aGUgdGVybXMgb2YgdGhlIE1vemlsbGEgUHVibGljCiAgIC0gTGljZW5zZSwgdi4gMi4wLiBJZiBhIGNvcHkgb2YgdGhlIE1QTCB3YXMgbm90IGRpc3RyaWJ1dGVkIHdpdGggdGhpcwogICAtIGZpbGUsIFlvdSBjYW4gb2J0YWluIG9uZSBhdCBodHRwOi8vbW96aWxsYS5vcmcvTVBMLzIuMC8uIC0tPgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICA8cGF0aCBmaWxsPSIjNjJhZGRkIiBkPSJNMTAsMTUuMWMtMy4zLDAtNi0yLjctNi02YzAtMy4zLDIuNy02LDYtNmMzLjMsMCw2LDIuNyw2LDZTMTMuMywxNS4xLDEwLDE1LjFMMTAsMTUuMSBNMTcuMywxNC4zIGMyLjktNCwyLTkuNy0yLjEtMTIuNnMtOS43LTItMTIuNiwyLjFDMS42LDUuMywxLDcuMiwxLDkuMWMwLDUsNC4xLDksOSw5YzEuOCwwLDMuNi0wLjYsNS4yLTEuNmw2LjIsNi4yYzAuNiwwLjYsMS41LDAuNiwyLjEsMCAgIGMwLjYtMC42LDAuNi0xLjUsMC0yLjFMMTcuMywxNC4zTDE3LjMsMTQuM3oiLz4KPC9zdmc+</Image>
+<Url type="text/html" method="GET" template="https://vbang2.vercel.app/search?q={searchTerms}"/>
+<Url type="application/x-suggestions+json" method="GET" template="https://duckduckgo.com/ac/?q={searchTerms}&amp;type=list"/>
+</OpenSearchDescription>
