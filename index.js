@@ -4,7 +4,7 @@ const userBangs = require('./user.json');
 
 app.get('/', (req, res) => {
   const query = req.query.q;
-  const bangMatch = query.match(/([!！][0-9A-z]+)/g);
+  const bangMatch = query.match(/\b(v[0-9A-z]{1,4})\b/g);
   let bang, mainQuery;
 
   if (bangMatch && bangMatch.length >= 1) {
@@ -16,15 +16,15 @@ app.get('/', (req, res) => {
   }
 
   if (bang) {
-    const bangEntry = userBangs.find(entry => entry.t === bang);
-    if (bangEntry) {
-      const redirectUrl = bangEntry.u.replace('{{{s}}}', mainQuery);
+    const bangMatch = userBangs.find(entry => entry.t === bang);
+    if (bangMatch) {
+      const redirectUrl = bangMatch.u.replace('{{{s}}}', mainQuery);
       res.redirect(redirectUrl);
     } else {
-      res.redirect(`https://duckduckgo.com/?q=${encodeURIComponent(query)}`);
+      res.redirect(`https://duckduckgo.com/?q=!${bang}%20${encodeURIComponent(mainQuery)}`);
     }
   } else {
-    res.redirect(`https://duckduckgo.com/?q=!g%20${encodeURIComponent(query)}`);
+    res.redirect(`https://kagi.com/search?q=${encodeURIComponent(mainQuery)}`);
   }
 });
 
