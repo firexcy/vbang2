@@ -32,7 +32,7 @@ body {
     text-align: left;
     width: 60%;
     max-width: 600px;
-    height: 28px
+    height: 28px;
 }
 
 .submit {
@@ -44,16 +44,16 @@ body {
     body {
         width: 100%;
         margin-left: 2px;
-        padding: 0
+        padding: 0;
     }
 
     .query {
-        width: 160px
+        width: 200px;
     }
 }
 
 @media only screen and (max-device-width: 701px) and (orientation: landscape) {
     .query {
-        width: 253px
+        width: 250px;
     }
 }
