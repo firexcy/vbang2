@@ -1,8 +1,8 @@
 # vbang2 - DDG-style Bangs with Customizations
 
-A simple Node script that emulates DuckDuckGo-style Bangs (search engine shortcuts).
+A simple Node application that emulates DuckDuckGo-style Bangs (search engine shortcuts).
 
-The script —
+The main script `search.js` works as follows:
 
 1. exposes an API endpoint `/search` that accepts a single parameter `q` from HTTP GET calls; and
 2. parses `q` to determine whether there is a prefixing or affixing “bang” string (defined as a space-delimited string comprising of a leading letter `v` followed by a sequence of alphanumerics) and —
@@ -27,10 +27,12 @@ You can define your bang strings in `user.json` following the template below:
 You can run the script locally with
 
 ```sh
-node index.js
+node .
 ```
 
-…or deploy it to Vercel for free by clicking the button below.
+and find it at localhost:3000.
+
+Or, you can deploy the repo to Vercel for free by clicking the button below.
 
 <a href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ffirexcy%2Fvbang2"><img src="https://vercel.com/button" alt="Deploy with Vercel"/></a>
 
@@ -38,5 +40,7 @@ A preview deployment is available at <https://vbang2.vercel.app/>. It is recomme
 
 **Note:**
 You may want to set the forked repo as private and select an obscure or protected URL for better privacy, especially if you want to save bangs that redirect to confidential or paywalled locations.
+
+Of course, you can also use any cloud service that supports the depolyment of Node.js code, such as fly.io, Cloudflare Worker, etc.
 
 *The project is made as a demo for an upcoming member-only post at <em>SSPAI Prime</em> (<https://sspai.com/prime/explore>). If you find this useful, please consider purchasing a subscription as a form of support. Thanks.*

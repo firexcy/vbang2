@@ -1,9 +1,13 @@
+const express = require('express');
+const app = express();
 const userBangs = require('./user.json');
 
-export default (req, res) => {
+app.use(express.static('.'));
+
+app.get('/search', (req, res) => {
   if (req.method === 'GET') {
     const query = req.query.q;
-    const bangMatch = query.match(/^([Vv][0-9A-z]+)\b|\b([Vv][0-9A-z]+)$/g);
+    let bangMatch = query.match(/^([Vv][0-9A-z]+)\b|\b([Vv][0-9A-z]+)$/g);
     let bang, mainQuery;
 
     if (bangMatch && bangMatch.length >= 1) {
@@ -20,12 +24,16 @@ export default (req, res) => {
         const redirectUrl = bangMatch.u.replace('{{{s}}}', encodeURIComponent(mainQuery));
         res.redirect(redirectUrl);
       } else {
-        res.redirect(`https://duckduckgo.com/?q=!${bang}%20${encodeURIComponent(mainQuery)}`);
+        res.redirect(`https://kagi.com/search?q=!${bang}%20${encodeURIComponent(mainQuery)}`);
       }
     } else {
-      res.redirect(`https://duckduckgo.com/?q=!g%20${encodeURIComponent(mainQuery)}`);
+      res.redirect(`https://kagi.com/search?q=${encodeURIComponent(mainQuery)}`);
     }
   } else {
     res.status(405).send({ error: 'Only GET requests are allowed' });
   }
-};
+});
+
+app.listen(3000, () => {
+  console.log(`Server listening on port 3000`)
+});
