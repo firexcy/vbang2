@@ -18,6 +18,8 @@ app.get('/search', (req, res) => {
       mainQuery = query;
     }
 
+    res.set('Referer', '');
+
     if (bang) {
       const bangMatch = userBangs.find(entry => entry.t === bang);
       if (bangMatch) {
