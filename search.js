@@ -15,7 +15,7 @@ app.get('/search', (req, res) => {
       mainQuery = query.replace(bangMatch[0], '').trim();
     } else {
       bang = null;
-      mainQuery = query;
+      mainQuery = query.trim();
     }
 
     if (bang) {
