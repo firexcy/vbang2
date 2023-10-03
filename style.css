@@ -26,8 +26,8 @@ a::after {
     color: #5e81ac;
 }
 
-.subs,
-.quick {
+#subs,
+#quick {
     font-size: 20px;
     margin: 16px;
 }

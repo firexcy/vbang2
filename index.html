@@ -1,43 +1,70 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>vbang2</title>
     <link href="style.css" rel="stylesheet" />
-    <link rel="search" type="application/opensearchdescription+xml" title="vbang2" href="/opensearch.xml">
+    <link
+      rel="search"
+      type="application/opensearchdescription+xml"
+      title="vbang2"
+      href="/opensearch.xml"
+    />
     <meta name="referrer" content="no-referrer" />
-</head>
-
-<body>
+  </head>
+  <body>
     <div id="wrapper">
-        <h1 class="header">vbang2</h1>
-        <p class="subs">bangs like ddg, but led by v</p>
-        <form id="search" action="/search" method="get">
-            <input autofocus class="query" id="query" type="text" size="40" autocomplete="off" name="q"
-                placeholder="to bang or not to bang…">
-            <input class="submit" type="submit" value="question">
-        </form>
-        <div class="quick">
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('r')">r</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('hn')">hn</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('w')">w</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('gh')">gh</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('bd')">bd</a>
-            <a href="javascript:void(0);" onclick="prefixAndSubmit('taobao')">tb</a>
-        </div>
-        <p class="notes"><span class="inlineh">syntax </span>“v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt; v&lt;bang&gt;”.</p>
-        <p class="notes"><span class="inlineh">e.g. </span>“v<u>g</u> &lt;keyword&gt;” to google, “&lt;keyword&gt; v<u>w</u>” for wiki, etc.</p>
-        <p class="notes"><span class="inlineh">api </span>available at <u>/search?q=%s</u> for programmable calls.</p>
-        <p class="notes"><span class="inlineh">see </span><a href="https://duckduckgo.com/bang_lite.html">ddg’s catalog</a> for more bangs (alphanums only).</p>
-        <p class="notes">tossed up by chenyang “platy” hsu. <a href="https://github.com/firexcy/vbang2">fork</a> at your own risk.</p>
+      <h1 class="header">vbang2</h1>
+      <p id="subs">bangs like ddg, but led by v</p>
+      <form id="search" action="/search" method="get">
+        <input
+          autofocus
+          class="query"
+          id="query"
+          type="text"
+          size="40"
+          autocomplete="off"
+          name="q"
+          placeholder="to bang or not to bang…"
+        />
+        <input class="submit" type="submit" value="question" />
+      </form>
+      <div id="quick">
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('r')">r</a>
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('hn')">hn</a>
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('w')">w</a>
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('gh')">gh</a>
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('bd')">bd</a>
+        <a href="javascript:void(0);" onclick="prefixAndSubmit('tb')">tb</a>
+      </div>
+      <p class="notes">
+        <span class="inlineh">syntax </span>
+        “v&lt;bang&gt; &lt;keyword&gt;” or “&lt;keyword&gt; v&lt;bang&gt;”.
+      </p>
+      <p class="notes">
+        <span class="inlineh">e.g. </span>
+        “v<u>g</u> &lt;keyword&gt;” to google, “&lt;keyword&gt; v<u>w</u>” for
+        wiki, etc.
+      </p>
+      <p class="notes">
+        <span class="inlineh">api </span> available at <u>/search?q=%s</u> for
+        programmable calls.
+      </p>
+      <p class="notes">
+        <span class="inlineh">see </span>
+        <a href="https://duckduckgo.com/bang_lite.html">ddg’s catalog</a> for
+        more bangs (alphanums only).
+      </p>
+      <p class="notes">
+        tossed up by chenyang “platy” hsu.
+        <a href="https://github.com/firexcy/vbang2">fork</a> at your own risk.
+      </p>
     </div>
     <script>
-        function prefixAndSubmit(bang) {
-            var textBox = document.getElementById("query");
-            textBox.value = "v" + bang + ' ' + textBox.value;
-            document.getElementById("search").submit();
-        }
+      function prefixAndSubmit(bang) {
+        var textBox = document.getElementById("query");
+        textBox.value = "v" + bang + " " + textBox.value;
+        document.getElementById("search").submit();
+      }
     </script>
-</body>
-
+  </body>
 </html>

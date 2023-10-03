@@ -1,19 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-        {
-            "src": "*",
-            "use": "@vercel/static"
-        },
-        {
-            "src": "search.js",
-            "use": "@vercel/node"
-        }
-    ],
-    "routes": [
-        {
-            "src": "/search",
-            "dest": "/search.js"
-        }
-    ]
+  "version": 2,
+  "builds": [
+    {
+      "src": "*",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "search.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/search",
+      "dest": "/search.js"
+    }
+  ]
 }
