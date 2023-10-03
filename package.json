@@ -4,6 +4,9 @@
     "description": "A simple Node application that emulates DuckDuckGo-style Bangs (search engine shortcuts).",
     "main": "search.js",
     "author": "Platy Hsu",
+    "scripts": {
+        "start": "node search.js"
+    },
     "dependencies": {
         "express": "^4.18.2"
     },
