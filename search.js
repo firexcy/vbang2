@@ -21,10 +21,7 @@ app.get("/search", (req, res) => {
     if (bang) {
       const bangMatch = userBangs.find((entry) => entry.t === bang);
       if (bangMatch) {
-        const redirectUrl = bangMatch.u.replace(
-          "{{{s}}}",
-          encodeURIComponent(mainQuery)
-        );
+        const redirectUrl = bangMatch.u.replace("{{{s}}}", encodeURIComponent(mainQuery));
         res.redirect(redirectUrl);
       } else {
         res.redirect(303, `https://duckduckgo.com/?q=!${bang}%20${encodeURIComponent(mainQuery)}`);
